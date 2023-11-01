@@ -3,10 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TestController;
 
- get('/', function () {
+ Route::get('/', function () {
      return view('welcome');
 });
- get(‘/‘, [TestController::class, 'index']);
+ Route::get(‘/‘, [TestController::class, 'index']);
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +19,7 @@ use App\Http\Controllers\TestController;
 |
 */
 
- get(‘/‘,  function () {
+ Route::get(‘/‘,  function () {
     return view('welcome');
 });
 
